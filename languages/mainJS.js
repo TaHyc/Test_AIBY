@@ -1,5 +1,3 @@
-console.log("!!!!!!!!!!")
-
 const select = document.querySelector("select");
 const allLang = ["en", "de", "es", "fr", "ja", "pt"];
 

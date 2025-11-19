@@ -1,5 +1,13 @@
 const languages = {
     "title": {
+        "en": "En title",
+        "de": "De title",
+        "es": "Es title",
+        "fr": "Fr title",
+        "ja": "Ja title",
+        "pt": "Pt title",
+    },
+    "main": {
         "en": "Get Unlimited <br>Access",
         "de": "Erhalten Sie unbegrenzten <br>Zugriff",
         "es": "Obtén acceso <br>ilimitado",
