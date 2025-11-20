@@ -11,10 +11,10 @@
 
 <body>
     <!-- Крестик -->
-    <div class="close-button">
+    <a href='#' class="close-button">
         <div class="line line1"></div>
         <div class="line line2"></div>
-    </div>
+    </a>
     <!-- Меню выбора языка для проверки. ВРЕМЕННО, ТОЛЬКО ДЛЯ ТЕСТОВ!!! -->
     <select class="change-lang">
         <option value="en" selected>EN</option>
@@ -38,14 +38,13 @@
     <div class="buttons">
         <!-- Первая кнопка годовой доступ -->
         <div class="button" id="yearlyAccess">
+            <div class="best_offer">best offer</div>
             <div class="buttonTexts">
                 <text class="lng-earlyText">Yearly access</text>
                 <text class="lng-earlyPrice">Just $39.99 per year</text>
             </div>
 
             <div class="buttonOpacityTexts">
-
-                <div class="best_offer">best offer</div>
                 <text class="lng-earlyPriceRight">$0.48 <br>per week</text>
             </div>
         </div>
@@ -57,14 +56,14 @@
             </div>
         </div>
 
-        <button class="lng-continue button" id="continue">Continue</button>
+        <a class="lng-continue button" id="continue">Continue</a>
     </div>
 
     <!-- Футер -->
     <footer>
-        <a href="#" class="lng-tou footerLinks">Terms of Use</a>
-        <a href="#" class="lng-pp footerLinks">Privacy Policy</a>
-        <a href="#" class="lng-rest footerLinks">Restore</a>
+        <a href="https://apple.com/ " class="lng-tou footerLinks">Terms of Use</a>
+        <a href="https://google.com/ " class="lng-pp footerLinks">Privacy Policy</a>
+        <a href="https://google.com/ " class="lng-rest footerLinks">Restore</a>
     </footer>
 
     <script src="./languages/languagesArr.js"></script>
