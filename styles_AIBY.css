@@ -1,13 +1,37 @@
+/* Roboto*/
 @font-face {
     font-family: 'Roboto';
     src: url('./fonts/Roboto/Roboto.ttf') format('ttf');
     font-weight: normal;
     font-style: normal;
 }
+
+/* San Francisco Pro */
+@font-face {
+    font-family: 'Francisco';
+    src: url('./fonts/San\ Francisco\ Pro\ Display/SF-Pro-Display-Ultralight.otf') format('opentype');
+    font-weight: 200;
+    font-style: normal;
+}
+
 @font-face {
     font-family: 'Francisco';
     src: url('./fonts/San\ Francisco\ Pro\ Display/SF-Pro-Display-Bold.otf') format('opentype');
-    font-weight: bold;
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Francisco';
+    src: url('./fonts/San\ Francisco\ Pro\ Display/SF-Pro-Display-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Francisco';
+    src: url('./fonts/San\ Francisco\ Pro\ Display/SF-Pro-Display-Semibold.otf') format('opentype');
+    font-weight: 600;
     font-style: normal;
 }
 
@@ -48,6 +72,7 @@ body {
 
 .lng-main {
     font-family: 'Francisco', sans-serif;
+    font-weight: 800;
     /*margin-top: 200px;*/
     color: #FFFFFF;
     font-weight: 800;
@@ -97,6 +122,8 @@ body {
 
 .button {
     color: rgba(255, 255, 255, 1);
+    font-family: 'Francisco', sans-serif;
+    font-weight: 400;
     border: none;
     box-sizing: border-box;
     width: 100%;
@@ -124,15 +151,21 @@ body {
 .lng-earlyText,
 .lng-weeklyText {
     text-transform: uppercase;
+    font-family: 'Francisco', sans-serif;
+    font-weight: 600;
 }
 
 .lng-earlyPrice {
     opacity: 0.7;
+    font-family: 'Francisco', sans-serif;
+    font-weight: 200;
 }
 
 .lng-earlyPriceRight {
     opacity: 0.7;
     padding-right: 20px;
+    font-family: 'Francisco', sans-serif;
+    font-weight: 200;
 }
 
 .lng-weeklyPrice {
@@ -146,11 +179,13 @@ body {
     margin-top: 15%;
     position: relative;
 }
+
 #weeklyAccess {
     background-color: #54535a;
     border: 1px solid rgba(255, 255, 255, 1);
     backdrop-filter: blur(10.873126983642578px);
 }
+
 /*#yearlyAccess::before {
     content: "";
     width: 200px;
@@ -166,7 +201,7 @@ body {
 #continue {
     display: block;
     font-family: 'Francisco', sans-serif;
-    font-weight: 590;
+    font-weight: 600;
     font-size: 20px;
     line-height: 24px;
     letter-spacing: 0px;
@@ -176,9 +211,10 @@ body {
     color: rgba(7, 11, 51, 1);
     background-color: rgba(255, 255, 255, 1);
 }
+
 .best_offer {
     background: linear-gradient(90deg, #BC1FEF 0%, #0035FF 100%);
-    border: 1px solid transparent; 
+    border: 1px solid transparent;
     color: rgba(255, 255, 255, 1);
     width: 115px;
     height: 20px;
@@ -187,34 +223,38 @@ body {
     margin-left: -26px;
     box-sizing: border-box;
     font-family: 'Roboto, sans-serif';
-    font-weight: 700;
+    font-weight: 900;
     font-size: 13px;
     text-align: center;
     text-transform: uppercase;
     border-radius: 100px;
     cursor: pointer;
-    transition: background-color 0.3s, border-color 0.3s; 
+    transition: background-color 0.3s, border-color 0.3s;
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: borderAnimation 10s infinite; 
+    animation: borderAnimation 10s infinite;
 }
 
 @keyframes borderAnimation {
     0% {
-        border-color: #00B5FF; 
+        border-color: #00B5FF;
     }
+
     25% {
-        border-color: #632AF7; 
+        border-color: #632AF7;
     }
+
     50% {
-        border-color: #FF96F4; 
+        border-color: #FF96F4;
     }
+
     75% {
-        border-color: #BC1FEF; 
+        border-color: #BC1FEF;
     }
+
     100% {
-        border-color: #00B5FF; 
+        border-color: #00B5FF;
     }
 }
 
@@ -228,8 +268,8 @@ footer {
 
 .footerLinks {
     font-family: 'Francisco', sans-serif;
-    color: rgba(255, 255, 255, 1);
     font-weight: 200;
+    color: rgba(255, 255, 255, 1);
     font-size: 13px;
     line-height: 18px;
     letter-spacing: 0px;
