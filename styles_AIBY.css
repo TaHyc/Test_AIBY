@@ -230,15 +230,46 @@ body {
     background-color: rgba(255, 255, 255, 1);
 }
 
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%; 
+    }
+    50% {
+        background-position: 100% 50%; 
+    }
+    100% {
+        background-position: 0% 50%; 
+    }
+}
+
+@keyframes borderAnimation {
+    0% {
+        border-color: #00B5FF;
+    }
+    25% {
+        border-color: #632AF7;
+    }
+    50% {
+        border-color: #FF96F4;
+    }
+    75% {
+        border-color: #BC1FEF;
+    }
+    100% {
+        border-color: #00B5FF;
+    }
+}
+
 .best_offer {
     background: linear-gradient(90deg, #BC1FEF 0%, #0035FF 100%);
+    background-size: 200% 200%;
     border: 1px solid transparent;
     color: rgba(255, 255, 255, 1);
-    width: 120px;
-    height: 20px;
+    padding: 3px 10px; 
     position: absolute;
     margin-top: -16%;
     margin-left: 55%;
+    white-space: nowrap;
     box-sizing: border-box;
     font-family: 'Roboto, sans-serif';
     font-weight: 900;
@@ -249,33 +280,10 @@ body {
     cursor: pointer;
     transition: background-color 0.3s, border-color 0.3s;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    animation: borderAnimation 5s infinite;
+    justify-content: center; 
+    align-items: center; 
+    animation: gradientAnimation 5s ease infinite; /*borderAnimation 5s ease infinite; */
     min-width: 110px; 
-    min-height: 20px;
-}
-
-@keyframes borderAnimation {
-    0% {
-        border-color: #00B5FF;
-    }
-
-    25% {
-        border-color: #632AF7;
-    }
-
-    50% {
-        border-color: #FF96F4;
-    }
-
-    75% {
-        border-color: #BC1FEF;
-    }
-
-    100% {
-        border-color: #00B5FF;
-    }
 }
 
 footer {
