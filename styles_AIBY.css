@@ -167,6 +167,11 @@ body {
     min-height: 56px;
 }
 
+.active {
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 1);
+}
+
 .button>* {
     text-align-last: start;
     display: flex;
@@ -199,7 +204,7 @@ body {
 
 #weeklyAccess {
     background-color: #54535a;
-    border: 1px solid rgba(255, 255, 255, 1);
+
     backdrop-filter: blur(10.873126983642578px);
 }
 
@@ -215,7 +220,7 @@ body {
     border-image-slice: 1;
     animation: borderAnimation 10s infinite linear;
 }*/
-#continue {
+.lng-continue {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -232,17 +237,19 @@ body {
 
 @keyframes gradientAnimation {
     0% {
-        background-position: 0% 50%; 
+        background-position: 0% 50%;
     }
+
     50% {
-        background-position: 100% 50%; 
+        background-position: 100% 50%;
     }
+
     100% {
-        background-position: 0% 50%; 
+        background-position: 0% 50%;
     }
 }
 
-@keyframes borderAnimation {
+/*@keyframes borderAnimation {
     0% {
         border-color: #00B5FF;
     }
@@ -258,16 +265,17 @@ body {
     100% {
         border-color: #00B5FF;
     }
-}
+}*/
 
 .best_offer {
+    transition: background 0.5s ease, opacity 0.5s ease;
     background: linear-gradient(90deg, #BC1FEF 0%, #0035FF 100%);
     background-size: 200% 200%;
     border: 1px solid transparent;
     color: rgba(255, 255, 255, 1);
-    padding: 3px 10px; 
+    padding: 3px 10px;
     position: absolute;
-    margin-top: -16%;
+    margin-top: -17%;
     margin-left: 55%;
     white-space: nowrap;
     box-sizing: border-box;
@@ -278,12 +286,47 @@ body {
     text-transform: uppercase;
     border-radius: 100px;
     cursor: pointer;
-    transition: background-color 0.3s, border-color 0.3s;
     display: flex;
-    justify-content: center; 
-    align-items: center; 
-    animation: gradientAnimation 5s ease infinite; /*borderAnimation 5s ease infinite; */
-    min-width: 110px; 
+    justify-content: center;
+    align-items: center;
+    animation: gradientAnimation 5s ease infinite;
+    min-width: 110px;
+}
+
+.best_offer.unselect {
+    background: rgba(255, 255, 255, 1);
+    color: rgba(20, 17, 49, 1);
+    opacity: 0.7;
+}
+
+.unselect {
+    transition: background 0.5s ease, opacity 0.5s ease;
+}
+
+.negative {
+    animation: negative 0.5s ease;
+}
+
+@keyframes negative {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-10px);
+    }
+
+    50% {
+        transform: translateX(10px);
+    }
+
+    75% {
+        transform: translateX(-10px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
 }
 
 footer {
@@ -292,7 +335,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    min-width: 320px; 
+    min-width: 320px;
     min-height: 18px;
 }
 
