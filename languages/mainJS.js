@@ -1,7 +1,7 @@
 const select = document.querySelector("select");
 const allLang = ["en", "de", "es", "fr", "ja", "pt"];
 const userLanguage = navigator.language || navigator.userLanguage.substr(1); // Используем только первую часть
-//alert("Селектор языка используется только в целях проверки!")
+alert("Селектор языка используется только в целях проверки!")
 console.log('Язык по умолчанию в системе пользователя:', userLanguage);
 select.addEventListener("change", changeURLLanguage);
 
